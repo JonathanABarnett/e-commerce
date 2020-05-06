@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1027214287947",
+    "firebase_url": "https://e-commerce-9d4f5.firebaseio.com",
+    "project_id": "e-commerce-9d4f5",
+    "storage_bucket": "e-commerce-9d4f5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1027214287947:android:050291146337a7ccd219ce",
+        "android_client_info": {
+          "package_name": "com.alaythiaproductions.e_commerce"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1027214287947-imcahlg3drkcs3vttlkng9f6rrbp1bhs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAl7Xq-ZIMuiLyT6iC6vcqNfuAtS944uvY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1027214287947-imcahlg3drkcs3vttlkng9f6rrbp1bhs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
