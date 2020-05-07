@@ -28,6 +28,8 @@ public class RegisterActivity extends AppCompatActivity {
     private EditText usernameET, phoneNumberET, passwordET;
     private ProgressDialog loadingBar;
 
+    private String rootUserDB = "Users";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -69,10 +71,10 @@ public class RegisterActivity extends AppCompatActivity {
         loadingBar.setCanceledOnTouchOutside(false);
         loadingBar.show();
         
-        validatePhoneNumber(username, phone, password);
+        registerUser(username, phone, password);
     }
 
-    private void validatePhoneNumber(final String username, final String phone, final String password) {
+    private void registerUser(final String username, final String phone, final String password) {
     
         final DatabaseReference rootRef;
         rootRef = FirebaseDatabase.getInstance().getReference();
@@ -86,7 +88,7 @@ public class RegisterActivity extends AppCompatActivity {
                     userDataHashMap.put("username", username);
                     userDataHashMap.put("password", password);
 
-                    rootRef.child("Users").child(phone).updateChildren(userDataHashMap)
+                    rootRef.child(rootUserDB).child(phone).updateChildren(userDataHashMap)
                             .addOnCompleteListener(new OnCompleteListener<Void>() {
                                 @Override
                                 public void onComplete(@NonNull Task<Void> task) {
